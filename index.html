@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EL BEBU 💈 | Barbería Urbana del Barrio</title>
-  <meta name="description" content="EL BEBU 💈 — Barbería urbana de confianza. Cortes finos, degradados perfectos, barbas prolijas y buena vibra. Estilo real de barrio, con la precisión de un profesional.">
-  <meta property="og:title" content="EL BEBU 💈 | Barbería Urbana del Barrio" />
-  <meta property="og:description" content="Cortes con estilo, técnica y buena onda. Vení al Bebu 💈 y viví la experiencia de una barbería real de barrio." />
+  <title>EL BEBU 💈 Barbería del Barrio</title>
+  <meta name="description" content="EL BEBU 💈 — Cortes finos, degradados perfectos y buena vibra. Barbería de barrio con estilo propio.">
+  <meta property="og:title" content="EL BEBU 💈 Barbería del Barrio" />
+  <meta property="og:description" content="Cortes finos, barbas prolijas y toda la onda del barrio. Venite al Bebu 💈" />
   <meta property="og:image" content="https://iili.io/KPHRXCN.md.webp" />
   <meta property="og:url" content="https://www.instagram.com/beburca/" />
   <meta name="theme-color" content="#d4af37" />
@@ -35,15 +35,12 @@
     main {
       position: relative;
       z-index: 1;
-    }
-
-    header {
       text-align: center;
-      padding: 80px 20px 60px;
+      padding: 80px 20px;
     }
 
     header img {
-      width: 180px;
+      width: 170px;
       border-radius: 15px;
       box-shadow: 0 0 25px rgba(255,215,0,0.4);
       margin-bottom: 20px;
@@ -55,7 +52,7 @@
       to { box-shadow: 0 0 30px #ffd700; }
     }
 
-    header h1 {
+    h1 {
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(2.5em, 8vw, 4em);
       color: #ffd700;
@@ -69,67 +66,54 @@
       to { text-shadow: 0 0 25px #ff6600, 0 0 50px #ffd700; }
     }
 
-    header h2 {
-      font-size: 1.2em;
+    h2 {
+      font-size: 1.1em;
       color: #ddd;
-      margin-top: 10px;
+      margin-top: 8px;
       font-weight: 400;
     }
 
-    section {
-      max-width: 850px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 40px 25px;
-    }
-
-    .about p {
+    p {
       font-size: 1.05em;
-      line-height: 1.7;
+      line-height: 1.6;
       color: #f1f1f1;
-      margin-top: 10px;
+      margin: 25px auto 40px;
+      max-width: 600px;
     }
 
-    .highlight {
-      color: #ffd700;
-      font-weight: 600;
-    }
+    .highlight { color: #ffd700; font-weight: 600; }
 
-    .services {
+    .servicios {
       background: rgba(255,255,255,0.05);
       border-radius: 15px;
-      margin-top: 30px;
-      padding: 25px 20px;
+      padding: 20px;
+      max-width: 500px;
+      margin: 0 auto 35px;
       box-shadow: 0 0 25px rgba(255,215,0,0.1);
     }
 
-    .services h3 {
+    .servicios h3 {
       color: #ffd700;
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.8em;
+      font-size: 1.6em;
       margin-bottom: 10px;
     }
 
-    .services ul {
+    .servicios ul {
       list-style: none;
       padding: 0;
-      text-align: left;
-      max-width: 400px;
-      margin: 0 auto;
+      font-size: 1em;
+      color: #eee;
     }
 
-    .services li {
-      margin: 10px 0;
-      font-size: 1em;
-      line-height: 1.5;
-    }
+    .servicios li { margin: 8px 0; }
 
     .btns {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 15px;
-      margin-top: 40px;
+      margin-top: 30px;
     }
 
     .btn {
@@ -150,12 +134,11 @@
 
     .btn img { width: 22px; height: 22px; }
 
-    /* ✅ BOTÓN FLOTANTE REPOSICIONADO */
     .whatsapp-float {
       position: fixed;
       width: 60px;
       height: 60px;
-      bottom: 90px; /* antes 25px — subido para no tapar texto */
+      bottom: 90px;
       right: 25px;
       background-color: #25d366;
       border-radius: 50%;
@@ -167,12 +150,8 @@
       z-index: 10;
     }
 
-    .whatsapp-float:hover {
-      transform: scale(1.15);
-      box-shadow: 0 0 25px rgba(37,211,102,0.8);
-    }
+    .whatsapp-float:hover { transform: scale(1.15); }
 
-    /* 🔧 Responsivo: en pantallas pequeñas, el botón sube un poco más */
     @media (max-width: 600px) {
       .whatsapp-float {
         bottom: 110px;
@@ -203,51 +182,43 @@
     <header>
       <img src="https://iili.io/KPHRXCN.md.webp" alt="Logo El Bebu" />
       <h1>EL BEBU 💈</h1>
-      <h2>Barbería Urbana del Barrio — Estilo, Precisión y Buena Vibra</h2>
+      <h2>Barbería del barrio — estilo, precisión y buena onda</h2>
     </header>
 
-    <section class="about">
-      <p>
-        En <span class="highlight">El Bebu</span> vas a encontrar más que una barbería:  
-        un espacio donde se mezcla el estilo del barrio con la técnica de un profesional.  
-        <br><br>
-        Cada corte se hace con dedicación — desde un <span class="highlight">fade limpio</span> hasta una <span class="highlight">barba perfecta</span> — todo pensado para que salgas con confianza y facha.  
-        <br><br>
-        Acá se respira buena onda, se charla, se ríe y se disfruta de la experiencia.  
-        Porque no venís solo a cortarte, venís a pasarla bien.
-      </p>
-    </section>
+    <p>
+      En <span class="highlight">El Bebu</span> te dejamos impecable.  
+      Cortes finos, barbas prolijas y la mejor vibra.  
+      Acá se corta bien, se charla y se pasa un buen rato.  
+      <br><br>
+      Si buscás un lugar con estilo y confianza, este es tu lugar.
+    </p>
 
-    <section class="services">
-      <h3>🔥 Servicios del Bebu</h3>
+    <div class="servicios">
+      <h3>Servicios</h3>
       <ul>
-        <li>✂️ Degradados (fade, taper, high & low)</li>
-        <li>🧔 Diseño y perfilado de barbas</li>
-        <li>💈 Corte clásico o moderno personalizado</li>
-        <li>💆 Lavado, cuidado y detalles con productos premium</li>
-        <li>🎧 Ambiente relajado, buena charla y música del barrio</li>
+        <li>✂️ Cortes y degradados</li>
+        <li>🧔 Perfilado y diseño de barbas</li>
+        <li>💈 Corte clásico o moderno</li>
+        <li>🎧 Música, buena onda y ambiente de barrio</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="cta">
-      <div class="btns">
-        <a href="https://wa.me/5491154753472?text=¡Hola%20Bebu!%20Quiero%20sacar%20turno%20💈" class="btn">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Pedí tu turno
-        </a>
-        <a href="https://www.instagram.com/beburca" class="btn">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Ver los cortes
-        </a>
-      </div>
-    </section>
+    <div class="btns">
+      <a href="https://wa.me/5491154753472?text=¡Hola%20Bebu!%20Quiero%20sacar%20turno%20💈" class="btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Pedí tu turno
+      </a>
+      <a href="https://www.instagram.com/beburca" class="btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Ver los cortes
+      </a>
+    </div>
   </main>
 
-  <!-- ✅ Botón flotante de WhatsApp reposicionado -->
   <a href="https://wa.me/5491154753472?text=¡Hola%20Bebu!%20Quiero%20sacar%20turno%20💈" class="whatsapp-float" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="35" height="35" alt="WhatsApp">
   </a>
 
   <footer>
-    © 2025 EL BEBU 💈 — Barbería Urbana | Diseñado por <a href="#">CIBORG 347 ⚡</a>
+    © 2025 EL BEBU 💈 — Barbería del Barrio | Diseñado por <a href="#">CIBORG 347 ⚡</a>
   </footer>
 
 </body>
