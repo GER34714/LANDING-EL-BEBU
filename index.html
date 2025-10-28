@@ -4,23 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>EL BEBU 💈 Barbería de Barrio</title>
-  <meta name="description" content="El Bebu Barbería 💈 — estilo, buena onda y el corte que necesitás. Tu barbería de confianza en el barrio.">
+  <meta name="description" content="EL BEBU 💈 — Cortes con estilo, buena charla y la onda de siempre. Tu barbería de confianza en el barrio.">
   <meta property="og:title" content="EL BEBU 💈 Barbería de Barrio" />
-  <meta property="og:description" content="Buena onda, cortes de calidad y estilo de barrio. Vení a El Bebu 💈" />
-  <meta property="og:image" content="https://iili.io/dz3H0oP.jpg" />
+  <meta property="og:description" content="Buena onda, cuchilla afilada y estilo de barrio. Vení al Bebu 💈" />
+  <meta property="og:image" content="https://iili.io/dz3HZ6J.jpg" />
   <meta property="og:url" content="https://www.instagram.com/beburca/" />
   <meta name="theme-color" content="#c59d5f" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
     }
 
     body {
-      background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+      background: radial-gradient(circle at top, #2e2e2e, #111);
       color: #fff;
       display: flex;
       flex-direction: column;
@@ -28,16 +27,46 @@
       min-height: 100vh;
       text-align: center;
       padding: 30px 20px;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
     }
 
+    /* 💈 POLOS DE LUZ */
+    .pole {
+      position: absolute;
+      top: 50px;
+      width: 20px;
+      height: 120px;
+      background: linear-gradient(180deg, red, white, blue, white, red);
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(255,255,255,0.6);
+      animation: giro 2s linear infinite;
+    }
+
+    @keyframes giro {
+      0% { background-position: 0 0; }
+      100% { background-position: 0 100%; }
+    }
+
+    .pole.left { left: 30px; }
+    .pole.right { right: 30px; }
+
     header {
-      margin-top: 20px;
+      margin-top: 40px;
+      position: relative;
     }
 
     h1 {
-      font-size: 2.5em;
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 3em;
       color: #f1c40f;
-      text-shadow: 0 0 10px #f1c40f;
+      text-shadow: 0 0 10px #f1c40f, 0 0 30px #f1c40f;
+      animation: pulso 2s infinite alternate;
+    }
+
+    @keyframes pulso {
+      from { text-shadow: 0 0 5px #f1c40f; }
+      to { text-shadow: 0 0 25px #f1c40f, 0 0 40px #ff0000; }
     }
 
     h2 {
@@ -47,20 +76,20 @@
     }
 
     .hero {
-      background: url('https://iili.io/dz3H6Ue.jpg') center/cover no-repeat;
+      background: url('https://iili.io/dz3HZ6J.jpg') center/cover no-repeat;
       width: 100%;
       max-width: 400px;
       height: 250px;
       border-radius: 15px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-      margin-bottom: 25px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      margin: 25px 0;
     }
 
     .desc {
       font-size: 1em;
-      max-width: 450px;
-      line-height: 1.6em;
-      margin-bottom: 25px;
+      max-width: 460px;
+      line-height: 1.7em;
+      margin-bottom: 30px;
     }
 
     .btns {
@@ -71,26 +100,85 @@
     }
 
     .btn {
-      background: #f1c40f;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(90deg, #f1c40f, #ff6600);
       color: #000;
       text-decoration: none;
-      padding: 12px 20px;
+      padding: 12px 22px;
       border-radius: 10px;
       font-weight: 700;
       transition: all 0.3s ease;
-      box-shadow: 0 0 15px rgba(241, 196, 15, 0.6);
+      box-shadow: 0 0 20px rgba(241, 196, 15, 0.6);
     }
 
     .btn:hover {
       background: #fff;
-      transform: scale(1.05);
+      transform: scale(1.08);
+    }
+
+    .btn img {
+      width: 22px;
+      height: 22px;
+    }
+
+    /* 📱 BOTÓN FLOTANTE WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 25px rgba(37,211,102,0.8);
+    }
+
+    /* 🎞 MARQUESINA ANIMADA */
+    .marquee {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #f1c40f, #ff6600);
+      color: #111;
+      font-weight: 700;
+      padding: 10px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      z-index: 99;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 15s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
     }
 
     footer {
       margin-top: auto;
       font-size: 0.9em;
       color: #aaa;
-      padding: 20px 0;
+      padding: 60px 0 80px;
     }
 
     footer a {
@@ -99,31 +187,52 @@
     }
 
     @media (max-width: 480px) {
-      h1 { font-size: 2em; }
+      h1 { font-size: 2.2em; }
       .hero { height: 200px; }
+      .pole.left { left: 10px; }
+      .pole.right { right: 10px; }
     }
   </style>
 </head>
 <body>
+  <!-- POLOS LUMINOSOS -->
+  <div class="pole left"></div>
+  <div class="pole right"></div>
+
   <header>
-    <h1>EL BEBU 💈</h1>
-    <h2>Barbería de Barrio con toda la buena onda</h2>
+    <h1>EL BEBU</h1>
+    <h2>Donde el corte es serio, pero la charla es buena</h2>
   </header>
 
   <div class="hero"></div>
 
   <p class="desc">
-    ✂️ En <strong>El Bebu</strong> vas a encontrar más que un corte — vas a encontrar <strong>buena onda, estilo y charlas de barrio</strong>.  
-    Vení a lookearte con los mejores, siempre con la esencia del barrio 💯.
+    En <strong>El Bebu</strong> vas a encontrar buena atención, cortes finos y ese ambiente que solo una barbería de barrio puede tener.  
+    ✂️ Degradados, barbas, diseños y una charla de las que te hacen volver.  
+    Venite tranqui, que el Bebu te deja impecable 💪
   </p>
 
   <div class="btns">
-    <a href="https://wa.me/5491154753472?text=¡Hola%20Bebu!%20Quiero%20sacar%20turno%20para%20un%20corte%20💈" class="btn">📲 Pedí tu turno</a>
-    <a href="https://www.instagram.com/beburca" class="btn">📸 Instagram</a>
+    <a href="https://wa.me/5491154753472?text=¡Hola%20Bebu!%20Quiero%20sacar%20turno%20para%20un%20corte%20💈" class="btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Reservá tu turno
+    </a>
+    <a href="https://www.instagram.com/beburca" class="btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Mirá los cortes
+    </a>
+  </div>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/5491154753472?text=¡Hola%20Bebu!%20Quiero%20sacar%20turno%20💈" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="35" height="35" alt="WhatsApp">
+  </a>
+
+  <!-- MARQUESINA ANIMADA -->
+  <div class="marquee">
+    <span>💈 Turnos por WhatsApp — Abierto todos los días — Seguinos en Instagram @beburca 💈 &nbsp;&nbsp;&nbsp;</span>
   </div>
 
   <footer>
-    © 2025 EL BEBU 💈 — Barbería de Barrio | Creado y diseñado por https://CIBORG 347.onrender.com
+    © 2025 EL BEBU 💈 — Barbería de Barrio | Diseñado por CIBORG 347 ⚡
   </footer>
 </body>
 </html>
