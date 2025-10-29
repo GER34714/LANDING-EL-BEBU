@@ -13,8 +13,7 @@
   <meta property="og:url" content="https://barber99.onrender.com" />
   <meta name="theme-color" content="#6f00ff" />
 
-  <!-- FUENTES -->
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -27,11 +26,11 @@
 
     header {
       text-align: center;
-      padding: 30px 10px 10px;
+      padding: 40px 10px 20px;
     }
     header img {
-      width: 280px;
-      max-width: 90%;
+      width: 310px;
+      max-width: 95%;
       filter: drop-shadow(0 0 15px #00e1ff);
       animation: neonPulse 2.5s infinite alternate;
       border-radius: 10px;
@@ -43,17 +42,16 @@
 
     h1 {
       font-family: 'UnifrakturCook', cursive;
-      font-size: 3em;
+      font-size: 3.6em;
       color: #00e1ff;
       text-shadow: 0 0 15px #00e1ff, 0 0 25px #ff00e6, 0 0 45px #ffd700;
       margin-top: 15px;
     }
-
     h2 {
       color: #ffd700;
       font-weight: 600;
-      font-size: 1.3em;
-      margin-top: 5px;
+      font-size: 1.6em;
+      margin-top: 10px;
       animation: neonGlow 2s ease-in-out infinite alternate;
     }
     @keyframes neonGlow {
@@ -63,68 +61,81 @@
 
     section {
       max-width: 900px;
-      margin: 50px auto;
+      margin: 60px auto;
       text-align: center;
-      padding: 0 15px;
+      padding: 0 25px;
     }
-    .desc {
-      font-size: 1.1em;
-      color: #ddd;
-      line-height: 1.7;
-      margin-bottom: 40px;
+
+    /* BLOQUES DE TEXTO */
+    .bloque {
+      margin-bottom: 50px;
+      line-height: 1.9;
+    }
+    .bloque-actitud {
+      font-size: 1.4em;
+      color: #fff;
+      text-shadow: 0 0 10px #00e1ff;
+    }
+    .bloque-actitud b {
+      color: #ffd700;
+    }
+    .bloque-profesional {
+      font-size: 1.25em;
+      color: #cfcfcf;
     }
 
     .btn {
       display: inline-block;
-      padding: 14px 30px;
+      padding: 18px 38px;
       background: linear-gradient(45deg, #6f00ff, #00e1ff);
-      border-radius: 40px;
+      border-radius: 50px;
       color: #fff;
       text-decoration: none;
       font-weight: 600;
-      box-shadow: 0 0 20px rgba(0, 225, 255, 0.6);
+      font-size: 1.2em;
+      box-shadow: 0 0 25px rgba(0, 225, 255, 0.6);
       transition: 0.3s;
     }
     .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 35px rgba(255, 255, 255, 0.9);
+      transform: scale(1.07);
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.9);
     }
 
     .contacto {
-      margin-top: 40px;
-      font-size: 1.1em;
+      margin-top: 45px;
+      font-size: 1.3em;
       color: #ffcc00;
     }
 
     .instagram {
       text-align: center;
-      margin-top: 35px;
+      margin-top: 45px;
     }
     .instagram a {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       font-weight: 700;
       text-decoration: none;
-      font-size: 1.1em;
+      font-size: 1.3em;
       background: linear-gradient(45deg, #ff00e6, #ffd700, #00e1ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: 0.3s;
     }
-    .instagram a:hover { transform: scale(1.08); }
-    .instagram img { width: 30px; height: 30px; }
+    .instagram a:hover { transform: scale(1.1); }
+    .instagram img { width: 36px; height: 36px; }
 
     footer {
       text-align: center;
-      font-size: 0.9em;
+      font-size: 1.1em;
       color: #aaa;
-      margin: 70px 0 40px;
+      margin: 80px 0 50px;
     }
     footer img {
-      width: 110px;
+      width: 130px;
       opacity: 0.9;
-      margin: 12px 0;
+      margin: 15px 0;
     }
     footer a {
       color: #00e1ff;
@@ -136,24 +147,24 @@
       text-shadow: 0 0 10px #ff00e6;
     }
 
-    /* ✅ WHATSAPP FLOTANTE AJUSTADO */
+    /* WHATSAPP */
     .whatsapp {
       position: fixed;
-      bottom: 95px;
-      right: 25px;
+      bottom: 110px;
+      right: 30px;
       z-index: 999;
       animation: float 2.5s ease-in-out infinite;
     }
     .whatsapp img {
-      width: 52px;  /* 🔥 tamaño ajustado */
-      height: 52px;
+      width: 58px;
+      height: 58px;
       border-radius: 50%;
-      box-shadow: 0 0 10px rgba(37, 211, 102, 0.7);
+      box-shadow: 0 0 12px rgba(37, 211, 102, 0.8);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .whatsapp img:hover {
-      transform: scale(1.08);
-      box-shadow: 0 0 20px rgba(37, 211, 102, 1);
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(37, 211, 102, 1);
     }
     @keyframes float {
       0%,100%{transform:translateY(0);}
@@ -161,15 +172,8 @@
     }
 
     @media (max-width: 700px) {
-      .whatsapp { bottom: 85px; right: 15px; transform: scale(0.85); }
-      footer { margin-bottom: 90px; }
-    }
-    @media (max-width: 600px) {
-      header img { width: 220px; }
-      h1 { font-size: 2.2em; }
-      h2 { font-size: 1.1em; }
-      .btn { padding: 12px 25px; font-size: 0.95em; }
-      .desc { font-size: 1em; }
+      .whatsapp { bottom: 95px; right: 15px; transform: scale(0.9); }
+      footer { margin-bottom: 100px; }
     }
   </style>
 </head>
@@ -182,11 +186,21 @@
   </header>
 
   <section>
-    <p class="desc">
-      En <b>Barber 99</b> te damos más que un corte, te damos <b>actitud</b>.<br>
-      ✂️ Fades perfectos, perfilado, barbas y los mejores productos.<br>
-      💎 Cada detalle importa, porque el estilo se lleva con orgullo.
-    </p>
+    <!-- BLOQUE DE ACTITUD -->
+    <div class="bloque bloque-actitud">
+      💥 <b>En BARBER 99</b> no venís solo a cortarte el pelo — venís a soltar flow.  
+      ⚡ Fades precisos, 💎 estilo callejero, 💯 actitud real.  
+      🎧 Sonido de máquina, 🔥 charlas con estilo y un look que rompe la calle.  
+      😎 Vos traés la energía, nosotros te dejamos listo para brillar.
+    </div>
+
+    <!-- BLOQUE PROFESIONAL -->
+    <div class="bloque bloque-profesional">
+      ✂️ <b>Servicio profesional</b> en ambiente moderno y cómodo.  
+      💼 Cada detalle se cuida: higiene, productos premium y técnica precisa.  
+      🕒 Turnos por WhatsApp, atención personalizada y respeto por tu tiempo.  
+      💈 Porque verse bien también es parte del éxito.
+    </div>
 
     <a href="https://wa.me/5491154753472?text=Hola!%20Quiero%20reservar%20mi%20turno%20en%20Barber%2099" target="_blank" class="btn">
       Reservá tu turno 💬
@@ -206,7 +220,6 @@
     <p>Diseñado por <a href="https://ciborg347.onrender.com" target="_blank">CIBORG347™</a> 🚀</p>
   </footer>
 
-  <!-- ✅ BOTÓN WHATSAPP CON COLOR OFICIAL -->
   <a class="whatsapp" href="https://wa.me/5491154753472?text=Hola!%20Quiero%20reservar%20mi%20turno%20en%20Barber%2099" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
   </a>
