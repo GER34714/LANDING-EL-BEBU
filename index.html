@@ -1,225 +1,213 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EL BEBU 💈 Barbería del Barrio</title>
-  <meta name="description" content="EL BEBU 💈 — Cortes finos, degradados perfectos y buena vibra. Barbería de barrio con estilo propio.">
-  <meta property="og:title" content="EL BEBU 💈 Barbería del Barrio" />
-  <meta property="og:description" content="Cortes finos, barbas prolijas y toda la onda del barrio. Venite al Bebu 💈" />
-  <meta property="og:image" content="https://iili.io/KPHRXCN.md.webp" />
-  <meta property="og:url" content="https://www.instagram.com/beburca/" />
-  <meta name="theme-color" content="#d4af37" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BARBER 99 ✂️ Cortes con Estilo</title>
+  <meta name="description" content="💈 Barber 99 - Cortes con estilo, actitud y flow. Reservá tu turno por WhatsApp y seguinos en Instagram.">
+
+  <!-- ✅ META OPEN GRAPH -->
+  <meta property="og:title" content="BARBER 99 ✂️ Cortes con Estilo">
+  <meta property="og:description" content="🔥 Cortes con flow, actitud y precisión. Viví la experiencia Barber 99.">
+  <meta property="og:image" content="https://iili.io/KPTINj4.md.png">
+  <meta property="og:url" content="https://barber99.onrender.com">
+  <meta name="theme-color" content="#6f00ff">
+
+  <!-- FUENTES Y ESTILOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
+      background: radial-gradient(circle at top, #0a0a0a, #000);
+      color: white;
       font-family: 'Poppins', sans-serif;
-      background: url('https://iili.io/dz3HZ6J.jpg') center/cover no-repeat fixed;
-      color: #fff;
       overflow-x: hidden;
-      position: relative;
     }
 
-    body::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.75);
-      backdrop-filter: blur(2px);
-      z-index: 0;
-    }
-
-    main {
-      position: relative;
-      z-index: 1;
+    /* ENCABEZADO */
+    header {
       text-align: center;
-      padding: 80px 20px;
+      padding: 25px 10px 10px;
     }
-
     header img {
-      width: 170px;
-      border-radius: 15px;
-      box-shadow: 0 0 25px rgba(255,215,0,0.4);
-      margin-bottom: 20px;
-      animation: pulse 4s infinite alternate;
+      width: 260px;
+      max-width: 90%;
+      filter: drop-shadow(0 0 15px #00e1ff);
+      animation: neonPulse 2.5s infinite alternate;
+      border-radius: 10px;
     }
-
-    @keyframes pulse {
-      from { box-shadow: 0 0 10px #ff6600; }
-      to { box-shadow: 0 0 30px #ffd700; }
+    @keyframes neonPulse {
+      0% { filter: drop-shadow(0 0 10px #00e1ff) drop-shadow(0 0 20px #ff00e6); }
+      100% { filter: drop-shadow(0 0 25px #ffd700) drop-shadow(0 0 40px #00ffff); }
     }
 
     h1 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(2.5em, 8vw, 4em);
-      color: #ffd700;
-      letter-spacing: 3px;
-      text-shadow: 0 0 20px #ff6600;
-      animation: glow 3s ease-in-out infinite alternate;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.3em;
+      color: #00e1ff;
+      text-shadow: 0 0 10px #00e1ff, 0 0 25px #ff00e6;
+      margin-top: 10px;
     }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 10px #ffd700, 0 0 20px #ff6600; }
-      to { text-shadow: 0 0 25px #ff6600, 0 0 50px #ffd700; }
-    }
-
     h2 {
+      color: #ffd700;
+      font-weight: 600;
+      font-size: 1.2em;
+      margin-top: 5px;
+    }
+
+    /* SECCIÓN PRINCIPAL */
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      text-align: center;
+      padding: 0 15px;
+    }
+    .desc {
       font-size: 1.1em;
       color: #ddd;
-      margin-top: 8px;
-      font-weight: 400;
-    }
-
-    p {
-      font-size: 1.05em;
       line-height: 1.6;
-      color: #f1f1f1;
-      margin: 25px auto 40px;
-      max-width: 600px;
-    }
-
-    .highlight { color: #ffd700; font-weight: 600; }
-
-    .servicios {
-      background: rgba(255,255,255,0.05);
-      border-radius: 15px;
-      padding: 20px;
-      max-width: 500px;
-      margin: 0 auto 35px;
-      box-shadow: 0 0 25px rgba(255,215,0,0.1);
-    }
-
-    .servicios h3 {
-      color: #ffd700;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.6em;
-      margin-bottom: 10px;
-    }
-
-    .servicios ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1em;
-      color: #eee;
-    }
-
-    .servicios li { margin: 8px 0; }
-
-    .btns {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
+      margin-bottom: 40px;
     }
 
     .btn {
-      background: linear-gradient(90deg, #ffd700, #ff6600);
-      color: #000;
-      font-weight: bold;
-      padding: 12px 24px;
-      border-radius: 10px;
+      display: inline-block;
+      padding: 14px 30px;
+      background: linear-gradient(45deg, #6f00ff, #00e1ff);
+      border-radius: 40px;
+      color: #fff;
       text-decoration: none;
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 0 15px rgba(255,215,0,0.4);
+      font-weight: 600;
+      box-shadow: 0 0 20px rgba(0, 225, 255, 0.6);
+      transition: 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
     }
 
-    .btn:hover { transform: scale(1.08); background: #fff; }
-
-    .btn img { width: 22px; height: 22px; }
-
-    .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 90px;
-      right: 25px;
-      background-color: #25d366;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-      transition: all 0.3s ease;
-      z-index: 10;
+    /* CONTACTO */
+    .contacto {
+      margin-top: 40px;
+      font-size: 1.1em;
+      color: #ffcc00;
     }
 
-    .whatsapp-float:hover { transform: scale(1.15); }
-
-    @media (max-width: 600px) {
-      .whatsapp-float {
-        bottom: 110px;
-        right: 20px;
-      }
-    }
-
+    /* FOOTER */
     footer {
       text-align: center;
       font-size: 0.9em;
       color: #aaa;
-      padding: 40px 15px;
-      margin-top: 40px;
-      position: relative;
-      z-index: 1;
+      margin: 70px 0 40px;
+    }
+    footer img {
+      width: 120px;
+      opacity: 0.8;
+      margin: 10px 0;
+    }
+    footer a {
+      color: #00e1ff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    footer a:hover {
+      color: #ff00e6;
+      text-shadow: 0 0 10px #ff00e6;
     }
 
-    footer a {
-      color: #ffd700;
+    /* WHATSAPP FLOTANTE */
+    .whatsapp {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25D366;
+      border-radius: 50%;
+      padding: 13px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      z-index: 999;
+      animation: float 2.5s ease-in-out infinite;
+    }
+    .whatsapp img {
+      width: 45px;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* INSTAGRAM */
+    .instagram {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .instagram a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(45deg, #ff00e6, #ffd700, #00e1ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .instagram img {
+      width: 30px;
+      height: 30px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      header img { width: 200px; }
+      h1 { font-size: 1.8em; }
+      .btn { padding: 12px 25px; font-size: 0.95em; }
+      .desc { font-size: 1em; }
     }
   </style>
 </head>
 <body>
 
-  <main>
-    <header>
-      <img src="https://iili.io/KPHRXCN.md.webp" alt="Logo El Bebu" />
-      <h1>EL BEBU 💈</h1>
-      <h2>Barbería del barrio — estilo, precisión y buena onda</h2>
-    </header>
+  <!-- ENCABEZADO -->
+  <header>
+    <img src="https://iili.io/KPTINj4.md.png" alt="Barber 99 Logo Principal">
+    <h1>BARBER 99</h1>
+    <h2>💈 Cortes con Estilo 💪🔥</h2>
+  </header>
 
-    <p>
-      En <span class="highlight">El Bebu</span> te dejamos impecable.  
-      Cortes finos, barbas prolijas y la mejor vibra.  
-      Acá se corta bien, se charla y se pasa un buen rato.  
-      <br><br>
-      Si buscás un lugar con estilo y confianza, este es tu lugar.
+  <section>
+    <p class="desc">
+      En <b>Barber 99</b> te damos más que un corte, te damos <b>actitud</b>.  
+      ✂️ Fades perfectos, perfilado, barbas y los mejores productos.  
+      💎 Cada detalle importa, porque el estilo se lleva con orgullo.
     </p>
 
-    <div class="servicios">
-      <h3>Servicios</h3>
-      <ul>
-        <li>✂️ Cortes y degradados</li>
-        <li>🧔 Perfilado y diseño de barbas</li>
-        <li>💈 Corte clásico o moderno</li>
-        <li>🎧 Música, buena onda y ambiente de barrio</li>
-      </ul>
-    </div>
+    <a href="https://wa.me/5491154753472?text=Hola!%20Quiero%20reservar%20mi%20turno%20en%20Barber%2099" target="_blank" class="btn">
+      Reservá tu turno 💬
+    </a>
 
-    <div class="btns">
-      <a href="https://wa.me/5491154753472?text=¡Hola%20Bebu!%20Quiero%20sacar%20turno%20💈" class="btn">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Pedí tu turno
-      </a>
-      <a href="https://www.instagram.com/beburca" class="btn">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Ver los cortes
+    <p class="contacto">
+      📞 +54 9 11 5475-3472
+    </p>
+
+    <div class="instagram">
+      <a href="https://www.instagram.com/beburca?igsh=MTgwaTE0OWtocHhyOA==" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> ¡Seguime en Instagram!
       </a>
     </div>
-  </main>
+  </section>
 
-  <a href="https://wa.me/5491154753472?text=¡Hola%20Bebu!%20Quiero%20sacar%20turno%20💈" class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="35" height="35" alt="WhatsApp">
-  </a>
-
+  <!-- LOGO FINAL -->
   <footer>
-    © 2025 EL BEBU 💈 — Barbería del Barrio | Diseñado por <a href="#">CIBORG 347 ⚡</a>
+    <img src="https://iili.io/KPTaHgV.md.webp" alt="Logo Barber 99 final">
+    <p>
+      Diseñado por <a href="https://ciborg347.onrender.com" target="_blank">CIBORG347™</a> 🚀  
+    </p>
   </footer>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a class="whatsapp" href="https://wa.me/5491154753472?text=Hola!%20Quiero%20reservar%20mi%20turno%20en%20Barber%2099" target="_blank">
+    <img src="https://iili.io/JkaKzQP.png" alt="WhatsApp">
+  </a>
 
 </body>
 </html>
