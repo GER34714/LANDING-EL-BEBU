@@ -147,23 +147,24 @@
       text-shadow: 0 0 10px #ff00e6;
     }
 
-    /* WHATSAPP FLOTANTE REPARADO Y SIN FONDO */
+    /* WHATSAPP FLOTANTE OFICIAL */
     .whatsapp {
       position: fixed;
-      bottom: 95px; /* bien alto, sin tapar nada */
+      bottom: 95px; /* lo levantamos para no tapar nada */
       right: 25px;
       z-index: 999;
       animation: float 2.5s ease-in-out infinite;
     }
     .whatsapp img {
-      width: 55px;
-      height: 55px;
-      filter: brightness(1000%) drop-shadow(0 0 10px #00e1ff);
-      transition: transform 0.3s ease, filter 0.3s ease;
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(37, 211, 102, 0.7);
     }
     .whatsapp img:hover {
-      transform: scale(1.1);
-      filter: brightness(1000%) drop-shadow(0 0 20px #00ffff);
+      transform: scale(1.08);
+      box-shadow: 0 0 25px rgba(37, 211, 102, 1);
     }
     @keyframes float {
       0%, 100% { transform: translateY(0); }
@@ -225,9 +226,9 @@
     </p>
   </footer>
 
-  <!-- BOTÓN WHATSAPP FUNCIONAL Y SIN FONDO -->
+  <!-- BOTÓN WHATSAPP OFICIAL CON COLOR VERDE -->
   <a class="whatsapp" href="https://wa.me/5491154753472?text=Hola!%20Quiero%20reservar%20mi%20turno%20en%20Barber%2099" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 </body>
 </html>
