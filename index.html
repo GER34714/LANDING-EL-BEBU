@@ -25,7 +25,6 @@
       overflow-x: hidden;
     }
 
-    /* ENCABEZADO */
     header {
       text-align: center;
       padding: 30px 10px 10px;
@@ -50,7 +49,6 @@
       margin-top: 15px;
     }
 
-    /* 💈 CORTES CON ESTILO - EFECTO NEÓN */
     h2 {
       color: #ffd700;
       font-weight: 600;
@@ -63,7 +61,6 @@
       100% { text-shadow: 0 0 20px #ffd700, 0 0 40px #00e1ff, 0 0 70px #ff00e6; }
     }
 
-    /* SECCIÓN PRINCIPAL */
     section {
       max-width: 900px;
       margin: 50px auto;
@@ -93,14 +90,12 @@
       box-shadow: 0 0 35px rgba(255, 255, 255, 0.9);
     }
 
-    /* CONTACTO */
     .contacto {
       margin-top: 40px;
       font-size: 1.1em;
       color: #ffcc00;
     }
 
-    /* INSTAGRAM */
     .instagram {
       text-align: center;
       margin-top: 35px;
@@ -117,15 +112,9 @@
       -webkit-text-fill-color: transparent;
       transition: 0.3s;
     }
-    .instagram a:hover {
-      transform: scale(1.08);
-    }
-    .instagram img {
-      width: 30px;
-      height: 30px;
-    }
+    .instagram a:hover { transform: scale(1.08); }
+    .instagram img { width: 30px; height: 30px; }
 
-    /* FOOTER */
     footer {
       text-align: center;
       font-size: 0.9em;
@@ -147,36 +136,34 @@
       text-shadow: 0 0 10px #ff00e6;
     }
 
-    /* WHATSAPP FLOTANTE OFICIAL */
+    /* ✅ WHATSAPP FLOTANTE AJUSTADO */
     .whatsapp {
       position: fixed;
-      bottom: 95px; /* lo levantamos para no tapar nada */
+      bottom: 95px;
       right: 25px;
       z-index: 999;
       animation: float 2.5s ease-in-out infinite;
     }
     .whatsapp img {
-      width: 60px;
-      height: 60px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 52px;  /* 🔥 tamaño ajustado */
+      height: 52px;
       border-radius: 50%;
-      box-shadow: 0 0 12px rgba(37, 211, 102, 0.7);
+      box-shadow: 0 0 10px rgba(37, 211, 102, 0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .whatsapp img:hover {
       transform: scale(1.08);
-      box-shadow: 0 0 25px rgba(37, 211, 102, 1);
+      box-shadow: 0 0 20px rgba(37, 211, 102, 1);
     }
     @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-6px); }
+      0%,100%{transform:translateY(0);}
+      50%{transform:translateY(-6px);}
     }
 
-    /* AJUSTE RESPONSIVO */
     @media (max-width: 700px) {
       .whatsapp { bottom: 85px; right: 15px; transform: scale(0.85); }
       footer { margin-bottom: 90px; }
     }
-
     @media (max-width: 600px) {
       header img { width: 220px; }
       h1 { font-size: 2.2em; }
@@ -188,18 +175,16 @@
 </head>
 
 <body>
-  <!-- ENCABEZADO -->
   <header>
     <img src="https://iili.io/KPAGTpR.md.png" alt="Logo Barber 99 encabezado" />
     <h1>BARBER 99</h1>
     <h2>💈 Cortes con Estilo 💪🔥</h2>
   </header>
 
-  <!-- SECCIÓN PRINCIPAL -->
   <section>
     <p class="desc">
-      En <b>Barber 99</b> te damos más que un corte, te damos <b>actitud</b>.  
-      ✂️ Fades perfectos, perfilado, barbas y los mejores productos.  
+      En <b>Barber 99</b> te damos más que un corte, te damos <b>actitud</b>.<br>
+      ✂️ Fades perfectos, perfilado, barbas y los mejores productos.<br>
       💎 Cada detalle importa, porque el estilo se lleva con orgullo.
     </p>
 
@@ -207,9 +192,7 @@
       Reservá tu turno 💬
     </a>
 
-    <p class="contacto">
-      📞 +54 9 11 5475-3472
-    </p>
+    <p class="contacto">📞 +54 9 11 5475-3472</p>
 
     <div class="instagram">
       <a href="https://www.instagram.com/beburca?igsh=MTgwaTE0OWtocHhyOA==" target="_blank">
@@ -218,17 +201,14 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <img src="https://iili.io/KPTaHgV.md.webp" alt="Logo Barber 99 final" />
-    <p>
-      Diseñado por <a href="https://ciborg347.onrender.com" target="_blank">CIBORG347™</a> 🚀  
-    </p>
+    <p>Diseñado por <a href="https://ciborg347.onrender.com" target="_blank">CIBORG347™</a> 🚀</p>
   </footer>
 
-  <!-- BOTÓN WHATSAPP OFICIAL CON COLOR VERDE -->
+  <!-- ✅ BOTÓN WHATSAPP CON COLOR OFICIAL -->
   <a class="whatsapp" href="https://wa.me/5491154753472?text=Hola!%20Quiero%20reservar%20mi%20turno%20en%20Barber%2099" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
   </a>
 </body>
 </html>
