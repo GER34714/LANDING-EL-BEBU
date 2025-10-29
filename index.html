@@ -147,11 +147,11 @@
       text-shadow: 0 0 10px #ff00e6;
     }
 
-    /* WHATSAPP FLOTANTE MEJORADO */
+    /* WHATSAPP FLOTANTE CORREGIDO */
     .whatsapp {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 22px;
+      right: 22px;
       background: #25D366;
       border-radius: 50%;
       padding: 13px;
@@ -160,13 +160,16 @@
       animation: float 2.5s ease-in-out infinite;
       transition: 0.3s;
     }
-    .whatsapp img { width: 45px; }
+    .whatsapp img {
+      width: 50px;
+      height: 50px;
+      filter: drop-shadow(0 0 6px #000);
+    }
     @keyframes float {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-6px); }
     }
 
-    /* Evitar que tape texto */
     @media (max-height: 700px) {
       .whatsapp { bottom: 10px; right: 15px; transform: scale(0.9); }
     }
@@ -224,9 +227,9 @@
     </p>
   </footer>
 
-  <!-- WHATSAPP FLOTANTE -->
+  <!-- BOTÓN WHATSAPP FUNCIONAL -->
   <a class="whatsapp" href="https://wa.me/5491154753472?text=Hola!%20Quiero%20reservar%20mi%20turno%20en%20Barber%2099" target="_blank">
-    <img src="https://iili.io/JkaKzQP.png" alt="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 </body>
 </html>
