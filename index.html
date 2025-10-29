@@ -145,30 +145,28 @@
       text-shadow: 0 0 10px #ff00e6;
     }
 
-    /* ✅ WHATSAPP FLOTANTE SIN GLOW */
+    /* ✅ WHATSAPP FLOTANTE AJUSTADO MÁS ARRIBA */
     .whatsapp {
       position: fixed;
-      bottom: 100px;
+      bottom: 135px; /* 🔼 subido un poco más */
       right: 30px;
       z-index: 999;
       animation: float 2.5s ease-in-out infinite;
     }
     .whatsapp img {
-      width: 50px;
-      height: 50px;
+      width: 58px;
+      height: 58px;
       border-radius: 50%;
       transition: transform 0.3s ease;
     }
-    .whatsapp img:hover {
-      transform: scale(1.05);
-    }
+    .whatsapp img:hover { transform: scale(1.05); }
     @keyframes float {
       0%,100%{transform:translateY(0);}
       50%{transform:translateY(-6px);}
     }
 
     @media (max-width: 700px) {
-      .whatsapp { bottom: 95px; right: 15px; transform: scale(0.9); }
+      .whatsapp { bottom: 115px; right: 15px; transform: scale(0.9); }
       footer { margin-bottom: 100px; }
     }
   </style>
@@ -183,19 +181,20 @@
 
   <section>
     <div class="bloque bloque-actitud">
-      💥 <b>En BARBER 99</b>
+      💥 <b>En BARBER 99</b> no venís solo a cortarte el pelo — venís a soltar flow.  
+      ⚡ Fades precisos, 💎 estilo callejero, 💯 actitud real.  
+      🎧 Sonido de máquina, 🔥 charlas con estilo y un look que rompe la calle.  
       😎 Vos traés la energía, nosotros te dejamos listo para brillar.
     </div>
 
     <div class="bloque bloque-profesional">
       ✂️ <b>Servicio profesional</b> en ambiente moderno y cómodo.  
-      💼 Cada detalle se cuida: higiene, productos premium y técnica precisa y los mejores precios SIEMPRE!🤑
-
+      💼 Cada detalle se cuida: higiene, productos premium y técnica precisa.  
       🕒 Turnos por WhatsApp, atención personalizada y respeto por tu tiempo.  
       💈 Porque verse bien también es parte del éxito.
     </div>
 
-    <a href="https://wa.me/5491154753472?text=Hola bebu!%20Quiero%20reservar%20mi%20turno%20en%20Barber%2099" target="_blank" class="btn">
+    <a href="https://wa.me/5491154753472?text=Hola!%20Quiero%20reservar%20mi%20turno%20en%20Barber%2099" target="_blank" class="btn">
       Reservá tu turno 💬
     </a>
 
@@ -213,7 +212,7 @@
     <p>Diseñado por <a href="https://ciborg347.onrender.com" target="_blank">CIBORG347™</a> 🚀</p>
   </footer>
 
-  <!-- ✅ ÍCONO WHATSAPP SIN EFECTOS -->
+  <!-- ✅ BOTÓN WHATSAPP MÁS ARRIBA -->
   <a class="whatsapp" href="https://wa.me/5491154753472?text=Hola!%20Quiero%20reservar%20mi%20turno%20en%20Barber%2099" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
   </a>
