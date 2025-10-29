@@ -47,6 +47,7 @@
       text-shadow: 0 0 15px #00e1ff, 0 0 25px #ff00e6, 0 0 45px #ffd700;
       margin-top: 15px;
     }
+
     h2 {
       color: #ffd700;
       font-weight: 600;
@@ -66,7 +67,6 @@
       padding: 0 25px;
     }
 
-    /* BLOQUES DE TEXTO */
     .bloque {
       margin-bottom: 50px;
       line-height: 1.9;
@@ -76,9 +76,7 @@
       color: #fff;
       text-shadow: 0 0 10px #00e1ff;
     }
-    .bloque-actitud b {
-      color: #ffd700;
-    }
+    .bloque-actitud b { color: #ffd700; }
     .bloque-profesional {
       font-size: 1.25em;
       color: #cfcfcf;
@@ -147,7 +145,7 @@
       text-shadow: 0 0 10px #ff00e6;
     }
 
-    /* WHATSAPP */
+    /* ✅ WHATSAPP FLOTANTE SIN GLOW */
     .whatsapp {
       position: fixed;
       bottom: 110px;
@@ -159,12 +157,10 @@
       width: 58px;
       height: 58px;
       border-radius: 50%;
-      box-shadow: 0 0 12px rgba(37, 211, 102, 0.8);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s ease;
     }
     .whatsapp img:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 25px rgba(37, 211, 102, 1);
+      transform: scale(1.05);
     }
     @keyframes float {
       0%,100%{transform:translateY(0);}
@@ -186,7 +182,6 @@
   </header>
 
   <section>
-    <!-- BLOQUE DE ACTITUD -->
     <div class="bloque bloque-actitud">
       💥 <b>En BARBER 99</b> no venís solo a cortarte el pelo — venís a soltar flow.  
       ⚡ Fades precisos, 💎 estilo callejero, 💯 actitud real.  
@@ -194,7 +189,6 @@
       😎 Vos traés la energía, nosotros te dejamos listo para brillar.
     </div>
 
-    <!-- BLOQUE PROFESIONAL -->
     <div class="bloque bloque-profesional">
       ✂️ <b>Servicio profesional</b> en ambiente moderno y cómodo.  
       💼 Cada detalle se cuida: higiene, productos premium y técnica precisa.  
@@ -220,6 +214,7 @@
     <p>Diseñado por <a href="https://ciborg347.onrender.com" target="_blank">CIBORG347™</a> 🚀</p>
   </footer>
 
+  <!-- ✅ ÍCONO WHATSAPP SIN EFECTOS -->
   <a class="whatsapp" href="https://wa.me/5491154753472?text=Hola!%20Quiero%20reservar%20mi%20turno%20en%20Barber%2099" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
   </a>
